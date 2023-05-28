@@ -1,0 +1,8 @@
+/usr/local/lib/python3.10/dist-packages/pep8.py:110: FutureWarning: Possible nested set at position 1
+  EXTRANEOUS_WHITESPACE_REGEX = re.compile(r'[[({] | []}),;:]')
+.........................................ssss...............................................................
+----------------------------------------------------------------------
+Ran 108 tests in 0.361s
+
+OK (skipped=4)
+{'id': '45809ccf-f41a-46f3-abe0-9a62e82cab1e', 'created_at': datetime.datetime(2023, 5, 28, 12, 22, 33, 349473), 'updated_at': datetime.datetime(2023, 5, 28, 12, 22, 33, 349473)}
