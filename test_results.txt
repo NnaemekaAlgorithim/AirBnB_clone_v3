@@ -1,8 +1,132 @@
 /usr/local/lib/python3.10/dist-packages/pep8.py:110: FutureWarning: Possible nested set at position 1
   EXTRANEOUS_WHITESPACE_REGEX = re.compile(r'[[({] | []}),;:]')
-.........................................ssss...............................................................
+EEEEEEEE....................................ss......................................................................
+======================================================================
+ERROR: test_api.test_app (unittest.loader._FailedTest)
 ----------------------------------------------------------------------
-Ran 108 tests in 0.361s
+ImportError: Failed to import test module: test_api.test_app
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_app.py", line 5, in <module>
+    from api.v1 import app
+  File "/home/nwodo/AirBnB_clone_v3/api/v1/app.py", line 3, in <module>
+    from api.v1.views import app_views
+  File "/home/nwodo/AirBnB_clone_v3/api/v1/views/__init__.py", line 4, in <module>
+    from api.v1.views.index import * # noqa
+  File "/home/nwodo/AirBnB_clone_v3/api/v1/views/index.py", line 5, in <module>
+    from api.v1.views import app_views
+ImportError: cannot import name 'app_views' from partially initialized module 'api.v1.views' (most likely due to a circular import) (/home/nwodo/AirBnB_clone_v3/api/v1/views/__init__.py)
 
-OK (skipped=4)
-{'id': '45809ccf-f41a-46f3-abe0-9a62e82cab1e', 'created_at': datetime.datetime(2023, 5, 28, 12, 22, 33, 349473), 'updated_at': datetime.datetime(2023, 5, 28, 12, 22, 33, 349473)}
+
+======================================================================
+ERROR: test_api.test_v1.test_app (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api.test_v1.test_app
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_v1/test_app.py", line 5, in <module>
+    from api.v1 import app
+  File "/home/nwodo/AirBnB_clone_v3/api/v1/app.py", line 3, in <module>
+    from api.v1.views import app_views
+  File "/home/nwodo/AirBnB_clone_v3/api/v1/views/__init__.py", line 4, in <module>
+    from api.v1.views.index import * # noqa
+  File "/home/nwodo/AirBnB_clone_v3/api/v1/views/index.py", line 5, in <module>
+    from api.v1.views import app_views
+ImportError: cannot import name 'app_views' from partially initialized module 'api.v1.views' (most likely due to a circular import) (/home/nwodo/AirBnB_clone_v3/api/v1/views/__init__.py)
+
+
+======================================================================
+ERROR: test_api.test_v1.test_views.test_amenities (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api.test_v1.test_views.test_amenities
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_v1/test_views/test_amenities.py", line 11, in <module>
+    module = api.v1.views.amenities
+AttributeError: module 'api.v1' has no attribute 'views'
+
+
+======================================================================
+ERROR: test_api.test_v1.test_views.test_cities (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api.test_v1.test_views.test_cities
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_v1/test_views/test_cities.py", line 11, in <module>
+    module = api.v1.views.cities
+AttributeError: module 'api.v1' has no attribute 'views'
+
+
+======================================================================
+ERROR: test_api.test_v1.test_views.test_index (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api.test_v1.test_views.test_index
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_v1/test_views/test_index.py", line 11, in <module>
+    module = api.v1.views.index
+AttributeError: module 'api.v1' has no attribute 'views'
+
+
+======================================================================
+ERROR: test_api.test_v1.test_views.test_places (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api.test_v1.test_views.test_places
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_v1/test_views/test_places.py", line 11, in <module>
+    module = api.v1.views.places
+AttributeError: module 'api.v1' has no attribute 'views'
+
+
+======================================================================
+ERROR: test_api.test_v1.test_views.test_places_reviews (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api.test_v1.test_views.test_places_reviews
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_v1/test_views/test_places_reviews.py", line 11, in <module>
+    module = api.v1.views.places_reviews
+AttributeError: module 'api.v1' has no attribute 'views'
+
+
+======================================================================
+ERROR: test_api.test_v1.test_views.test_states (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_api.test_v1.test_views.test_states
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/home/nwodo/AirBnB_clone_v3/tests/test_api/test_v1/test_views/test_states.py", line 11, in <module>
+    module = api.v1.views.states
+AttributeError: module 'api.v1' has no attribute 'views'
+
+
+----------------------------------------------------------------------
+Ran 116 tests in 0.362s
+
+FAILED (errors=8, skipped=2)
+{'id': '9c39a0bb-99e4-49ef-8392-422511f7ee2f', 'created_at': datetime.datetime(2023, 5, 29, 14, 7, 34, 701790), 'updated_at': datetime.datetime(2023, 5, 29, 14, 7, 34, 701790)}
